@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+#root,html,body{
+    width: 100%;
+    height: 100%;
+}
+.mainContainer{
+    background-color: #dfdddd;
+    min-height: 100%;  
+    font-family: 'Poppins', sans-serif;
+}
+.small-container{
+    margin-top: 5rem;
+    padding: 1rem 3rem 2rem;
+    max-width: 500px;
+    border-radius: 10px;
+    background:#fff;
+    border: 1px solid rgb(228, 224, 224);
+    box-shadow:  1rem 1rem 1rem rgb(189, 186, 186);
+  }
+.nav-bar{
+    box-shadow: 0.4rem 0.4rem 0.4rem 0.4rem rgb(174, 173, 173);
+}
+.navbarLink{
+    color: #dfdddd;
+}
+.taskContainer{
+    border: 1px solid rgb(202, 204, 206);
+    width: 100%;
+    background-color:#f9f9f9;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 1rem 1rem 1rem rgb(189, 186, 186);
+    transition: 1s;
+    transition-delay: 1ms;
+    overflow: scroll;
+
+}
+.taskContainer::-webkit-scrollbar{
+    display: none;
+}
+.taskContainer>h3{
+    font-size: large;
+    box-shadow: 2px 2px 2px 2px#dfdddd;
+    padding: 0.5rem;
+    background-color: rgb(249, 248, 246);
+    border-radius: 8px;
+    font-weight: 700;
+    border-bottom: 1px solid #dfdddd;
+    border-right: 1px solid #dfdddd;
+}
+.taskContainer>h4{
+    font-size: large;
+}
+.taskContainer:hover{
+    transform: scale(1.01);
+    /* background-color: rgb(241, 245, 246); */
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(164, 167, 167);
+}
+@media screen and (min-width:480px) {
+    .taskContainer{
+        width: 30%;
+    }
+    .uncompleted{
+        display: grid;
+    }
+}
+.uncompleted{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    min-height: 100px;
+}
+.taskheader{
+    border-bottom: 1px solid grey;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: x-large;
+    margin-bottom: 1rem;
+}
+.addLink{
+    text-decoration: none;
+    color: black;
+    height: 5%;
+}
+.taskHeader{
+    font-size:x-large;
+    color: rgb(134, 130, 130);
+}
+.updeletebtn{
+    width: fit-content;
+    padding: 4px;
+    color: white;
+}
